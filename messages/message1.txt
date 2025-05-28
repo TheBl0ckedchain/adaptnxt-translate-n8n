@@ -1,5 +1,0 @@
-Hello, how are you?
-This is a test message.
-Welcome to n8n automation!
-Let’s automate translations into Indian languages.
-Have a great day!
