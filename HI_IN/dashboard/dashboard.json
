@@ -1,0 +1,27 @@
+{
+  "dashboard": {
+    "overview.totalSales": "कुल बिक्री",
+    "overview.visits": "बैवहार",
+    "overview.orders": "आदेश",
+    "overview.payments": "भुगतान",
+    "overview.sales": "बिक्री",
+    "overview.operationalEffect": "संचालनात्मक प्रभाव",
+    "overview.wowChange": "WoW बदलाव",
+    "overview.weekly": "साप्ताहिक",
+    "overview.monthly": "मासिक",
+    "overview.dodChange": "डोड परिवर्तन",
+    "overview.dailySales": "दैनिक बिक्री",
+    "overview.dailyOrders": "दैनिक आदेश",
+    "overview.visits.dailyVisits": "दैनिक यात्रा",
+    "overview.conversionRate": "परिवर्तन दर",
+    "salePercent.proportionOfSales": "बिक्री का अनुपात",
+    "salePercent.all": "सब",
+    "salePercent.online": "ऑनलाइन",
+    "salePercent.offline": "ऑफलाइन",
+    "salePercent.cod": "कोड",
+    "timeline.traffic": "ट्रैफिक",
+    "timeline.payments": "भुगतान",
+    "timeline.orders": "आदेश",
+    "timeline.sales": "बिक्री"
+  }
+}
