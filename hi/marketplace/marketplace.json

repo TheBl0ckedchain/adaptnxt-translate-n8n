@@ -1,0 +1,22 @@
+{
+  "marketplace": {
+    "name": "नाम",
+    "id": "नहीं",
+    "code": "कोड",
+    "currency": "डिफ़ॉल्ट मुद्रा",
+    "currency.inr": "भारतीय रुपये",
+    "currency.usd": "यूएस डॉलर",
+    "currency.ukp": "ब्रिटिश पाउंड",
+    "currency.eur": "यूरो",
+    "avatar": "छवि",
+    "date": "आर्डर की तारीख",
+    "status": "स्थिति",
+    "status.all": "सभी",
+    "status.active": "सक्रिय",
+    "status.inactive": "निष्क्रिय",
+    "nameRequired": "कृपया मार्केटप्लेस का नाम दर्ज करें",
+    "idRequired": "कृपया मार्केटप्लेस संख्या दर्ज करें",
+    "codeRequired": "कृपया कोड डालें",
+    "statusRequired": "कृपया सक्रिय स्थिति चुनें"
+  }
+}
