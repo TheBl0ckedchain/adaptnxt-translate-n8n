@@ -1,0 +1,33 @@
+{
+  "title": {
+    "login": "छापें",
+    "register": "डैशबोर्ड",
+    "print": "दस्तावेज़ीकरण",
+    "dashboard": "इंटीग्रेशन",
+    "documentation": "आदेश",
+    "setup": "वापसी",
+    "order": "ग्राहक",
+    "returns": "शिपिंग",
+    "customers": "इन्वेंटरी",
+    "courier": "चैनल",
+    "product": "ओएनडीसी",
+    "channel": "गाइड",
+    "listing": "मार्ग अनुमती",
+    "guide": "बटन अनुमति",
+    "permission.route": "अनुमति कॉन्फ़िग",
+    "permission.button": "खाता",
+    "permission.config": "चार सौ चार",
+    "account": "रिपोर्ट्स",
+    "notFount": "रिपोर्ट - ऑर्डर",
+    "reports": "रिपोर्ट - इन्वेंटरी",
+    "orderReports": "कैल्कुलेटर",
+    "orderItemReports": "अमेज़न शुल्क कैलकुलेटर",
+    "calculators": "आदेश बनाएँ",
+    "feecalculator": "शिपिंग कैल्कुलेटर",
+    "orderCreate": "रिचार्ज",
+    "shippingcalculator": "सुलह (बीटा)",
+    "recharge": "सदस्यताएँ",
+    "settlement": "रेफर और कमाओ",
+    "subscriptions": "प्रोफ़ाइल"
+  }
+}
