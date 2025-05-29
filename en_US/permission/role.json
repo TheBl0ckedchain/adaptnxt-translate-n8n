@@ -1,0 +1,13 @@
+{
+	"permission": {
+		"role.name": "Role Name",
+		"role.code": "Role Code",
+		"role.status": "Status",
+		"role.status.all": "All",
+		"role.status.enabled": "Enabled",
+		"role.status.disabled": "Disabled",
+		"role.nameRequired": "Please input the role name",
+		"role.codeRequired": "Please input the role code",
+		"role.statusRequired": "Please select the enabled status"
+	}
+}

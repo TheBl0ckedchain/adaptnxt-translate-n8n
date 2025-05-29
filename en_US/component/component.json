@@ -1,0 +1,11 @@
+{
+	"component": {
+		"search.request": "Request",
+		"search.reset": "Reset",
+		"search.export": "Export",
+		"search.name": "Name",
+		"search.sex": "Sex",
+		"search.male": "Male",
+		"search.female": "Female"
+	}
+}
