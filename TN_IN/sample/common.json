@@ -1,0 +1,19 @@
+{
+  "common": {
+    "okText": "Please provide the text you would like me to translate.",
+    "closeText": "தэк்சன்",
+    "cancelText": "மொழி",
+    "loadingText": "Please provide the text you would like translated to Tamil.",
+    "saveText": "Please provide the text you would like to have translated to Tamil.",
+    "delText": "Please provide the text you would like translated to Tamil.",
+    "resetText": "தற்காலிகமாக காத்திருக்கவும்",
+    "searchText": "Please provide the text you would like translated to Tamil.",
+    "queryText": "Text: ",
+    "inputText": "Please provide the text you would like to have translated.",
+    "chooseText": "தகவல்:",
+    "redo": "Please provide the text you would like to have translated to Tamil.",
+    "back": "தலைப்பு",
+    "light": "தலைப்பு",
+    "dark": "Please provide the text you would like to have translated into Tamil."
+  }
+}
