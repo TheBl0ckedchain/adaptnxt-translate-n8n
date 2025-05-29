@@ -1,0 +1,28 @@
+{
+  "product": {
+    "title": "मुद्रा",
+    "currency": "छवि",
+    "avatar": "कीमत",
+    "price": "उत्पादन आईडी",
+    "id": "उत्पाद SKU",
+    "sku": "एचएसएन कोड",
+    "hscode": "उत्पाद एसकेयू",
+    "code": "% आवंटन",
+    "allocation": "हाथ में स्टॉक",
+    "qty": "शिप करने का लीड टाइम",
+    "leadtime": "चैनल",
+    "channel": "स्थिति",
+    "status": "सभी",
+    "status.all": "सक्रिय",
+    "status.active": "निष्क्रिय",
+    "status.inactive": "कृपया उत्पाद का नाम दर्ज करें",
+    "nameRequired": "कृपया उत्पाद संख्या दर्ज करें",
+    "idRequired": "कृपया उत्पाद कोड दर्ज करें",
+    "codeRequired": "कृपया % आवंटन प्रवेश करें",
+    "allocationRequired": "कृपया सक्रिय स्थिति का चयन करें",
+    "statusRequired": "कृपया एक मान दर्ज करें",
+    "valueRequired": "कृपया शिप करने के लिए लीड समय दर्ज करें",
+    "leadtimeRequired": "कृपया हाथ में स्टॉक दर्ज करें",
+    "qtyRequired": "बुनियादी सेटिंग्स"
+  }
+}
