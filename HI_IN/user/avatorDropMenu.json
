@@ -1,0 +1,8 @@
+{
+  "header.avator.account": "खाता",
+  "header.avator.logout": "लॉगआउट",
+  "global.theme.switchTheme": "थीम बदलें",
+  "global.theme.switchingTheme": "थीम बदल रहा है",
+  "global.theme.switchThemeDone": "थीम सफलतापूर्वक अपडेट हुई",
+  "global.theme.switchThemeFail": "थिमा अपडेट करने में विफल"
+}
