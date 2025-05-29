@@ -1,0 +1,11 @@
+{
+  "component": {
+    "search.request": "அவசரம்",
+    "search.reset": "மீட்டமைப்பது",
+    "search.export": "ஏற்றுமதி",
+    "search.name": "பெயர்",
+    "search.sex": "இயல்பு",
+    "search.male": "அவன்",
+    "search.female": "பெண்"
+  }
+}
