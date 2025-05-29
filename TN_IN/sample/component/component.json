@@ -1,0 +1,11 @@
+{
+  "component": {
+    "search.request": "Please provide the text you would like to have translated to Tamil.",
+    "search.reset": "Please provide the text to translate.",
+    "search.export": "Please provide the text you would like to translate.",
+    "search.name": "Please provide the text you would like translated to Tamil.",
+    "search.sex": "Please provide the text you would like translated to Tamil.",
+    "search.male": "தகவல்: ",
+    "search.female": "உள்ளடக்கம்"
+  }
+}
