@@ -1,0 +1,19 @@
+{
+  "common": {
+    "okText": "சரி",
+    "closeText": "மூடு",
+    "cancelText": "ரத்து செய்",
+    "loadingText": "இன்ஸ்டால் செய்கிறேன்...",
+    "saveText": "சேமிக்கவும்",
+    "delText": "அழி",
+    "resetText": "மீட்டமைப்பு",
+    "searchText": "தேடுங்கள்",
+    "queryText": "தேடு",
+    "inputText": "கூகுள் சேரவும்",
+    "chooseText": "தயவுசெய்து தேர்வு செய்க",
+    "redo": "மறு புதுப்பிப்பு",
+    "back": "முழு",
+    "light": "ஒளி",
+    "dark": "நகரம்"
+  }
+}
