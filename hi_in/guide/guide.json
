@@ -1,0 +1,22 @@
+{
+  "guide": {
+    "guideIntro": "गाइड पृष्ठ उन लोगों के लिए उपयोगी है जो पहली बार परियोजना में शामिल हुए हैं आप परियोजना की विशेषताओं का संक्षेप में परिचय करा सकते हैं डेमो पर आधारित है",
+    "showGuide": "गाइड दिखाएं",
+    "driverjs.closeBtnText": "बंद करें",
+    "driverjs.prevBtnText": "पिछला",
+    "driverjs.nextBtnText": "आगे",
+    "driverjs.doneBtnText": "हो गया",
+    "driverStep.sidebarTrigger.title": "साइडबार ट्रिगर",
+    "driverStep.sidebarTrigger.description": "साइडबार खोलें और बंद करें",
+    "driverStep.notices.title": "सूचनाएँ",
+    "driverStep.notices.description": "यहां सभी सूचना संदेश प्रदर्शित होंगे",
+    "driverStep.switchLanguages.title": "भाषाएँ बदलें",
+    "driverStep.switchLanguages.description": "आप भाषाएँ बदलने के लिए यहाँ क्लिक कर सकते हैं",
+    "driverStep.pageTabs.title": "पृष्ठ टैब",
+    "driverStep.pageTabs.description": "आपके द्वारा देखे गए पृष्ठ का इतिहास यहाँ प्रदर्शित किया जाएगा",
+    "driverStep.pageTabsActions.title": "पृष्ठ टैब क्रियाएँ",
+    "driverStep.pageTabsActions.description": "यहां क्लिक करें पृष्ठ टैब्स पर कुछ तात्कालिक कार्य करने के लिए",
+    "driverStep.switchTheme.title": "थीम बदलें",
+    "driverStep.switchTheme.description": "यहाँ क्लिक करें सिस्टम थीम रंग बदलने के लिए"
+  }
+}
