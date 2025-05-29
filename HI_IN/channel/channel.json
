@@ -1,0 +1,31 @@
+{
+  "channel": {
+    "name": "चैनल का नाम",
+    "code": "चैनल कोड",
+    "type": "चैनल प्रकार",
+    "url": "यूआरएल",
+    "key": "की",
+    "secret": "गुप्त",
+    "seller": "बिक्रम",
+    "token": "टोकन",
+    "location": "स्थान",
+    "avatar": "चित्र",
+    "date": "आदेश तिथि",
+    "status": "स्थिति",
+    "status.all": "सभी",
+    "status.active": "सक्रिय",
+    "status.inactive": "निष्क्रिय",
+    "manageStock": "स्टॉक प्रबंधन",
+    "manageState": "आदेश स्थिति समन्वय",
+    "nameRequired": "कृपया चैनल का नाम डालें",
+    "codeRequired": "कृपया चैनल कोड दर्ज करें",
+    "statusRequired": "कृपया सक्षम स्थिति का चयन करें",
+    "typeRequired": "कृपया चैनल प्रकार चुनें",
+    "urlRequired": "कृपया एपीआई यूआरएल डालें",
+    "keyRequired": "कृपया एपीआई कुंजी दर्ज करें",
+    "secretRequired": "कृपया एपीआई सीक्रेट दर्ज करें",
+    "tokenRequired": "कृपया एपीआई टोकन दर्ज करें",
+    "locationRequired": "कृपया चैनल स्थान आईडी डालें",
+    "sellerRequired": "कृपया चैनल विक्रेता आईडी दर्ज करें"
+  }
+}
