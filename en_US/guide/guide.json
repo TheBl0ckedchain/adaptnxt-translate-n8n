@@ -1,0 +1,22 @@
+{
+	"guide": {
+		"guideIntro": "The guide page is useful for some people who entered the project for the first time. You can briefly introduce the features of the project. Demo is based on",
+		"showGuide": "Show Guide",
+		"driverjs.closeBtnText": "Close",
+		"driverjs.prevBtnText": "Previous",
+		"driverjs.nextBtnText": "Next",
+		"driverjs.doneBtnText": "Done",
+		"driverStep.sidebarTrigger.title": "Sidebar Trigger",
+		"driverStep.sidebarTrigger.description": "Open and close the Sidebar",
+		"driverStep.notices.title": "Notices",
+		"driverStep.notices.description": "All notification messages will be displayed here",
+		"driverStep.switchLanguages.title": "Switch Languages",
+		"driverStep.switchLanguages.description": "You can click here to switch languages",
+		"driverStep.pageTabs.title": "Page Tabs",
+		"driverStep.pageTabs.description": "The history of the page you visited will be displayed here",
+		"driverStep.pageTabsActions.title": "Page Tabs Actions",
+		"driverStep.pageTabsActions.description": "Click here to do some quick operations to the Page Tabs",
+		"driverStep.switchTheme.title": "Switch Theme",
+		"driverStep.switchTheme.description": "Click here to switch system theme color"
+	}
+}

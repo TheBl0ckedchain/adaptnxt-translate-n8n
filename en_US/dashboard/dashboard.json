@@ -1,0 +1,27 @@
+{
+	"dashboard": {
+		"overview.totalSales": "Total Sales",
+		"overview.visits": "Visits",
+		"overview.orders": "Orders",
+		"overview.payments": "Payments",
+		"overview.sales": "Sales",
+		"overview.operationalEffect": "Operational Effect",
+		"overview.wowChange": "WoW Change",
+		"overview.weekly": "Weekly",
+		"overview.monthly": "Monthly",
+		"overview.dodChange": "DoD Change",
+		"overview.dailySales": "Daily Sales",
+		"overview.dailyOrders": "Daily Orders",
+		"overview.visits.dailyVisits": "Daily Visits",
+		"overview.conversionRate": "Conversion Rate",
+		"salePercent.proportionOfSales": "The Proportion Of Sales",
+		"salePercent.all": "All",
+		"salePercent.online": "Online",
+		"salePercent.offline": "Offline",
+		"salePercent.cod": "Cod",
+		"timeline.traffic": "Traffic",
+		"timeline.payments": "Payments",
+		"timeline.orders": "Orders",
+		"timeline.sales": "Sales"
+	}
+}

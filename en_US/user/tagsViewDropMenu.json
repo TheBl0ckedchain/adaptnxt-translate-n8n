@@ -1,0 +1,8 @@
+{
+	"tagsView": {
+		"operation.closeCurrent": "Close Current",
+		"operation.closeOther": "Close Other",
+		"operation.closeAll": "Close All",
+		"operation.dashboard": "Dashboard"
+	}
+}
