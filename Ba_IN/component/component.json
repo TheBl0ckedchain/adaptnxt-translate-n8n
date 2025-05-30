@@ -1,0 +1,11 @@
+{
+  "component": {
+    "search.request": "অনুরোধ",
+    "search.reset": "রিসেট",
+    "search.export": "রপ্তানি",
+    "search.name": "নাম",
+    "search.sex": "সেক্স",
+    "search.male": "পুরুষ",
+    "search.female": "মহিলা"
+  }
+}
