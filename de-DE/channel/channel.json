@@ -1,0 +1,31 @@
+{
+  "channel": {
+    "name": "Kanalname",
+    "code": "Kanalcode",
+    "type": "Kanaltyp",
+    "url": "URL",
+    "key": "Schlüssel",
+    "secret": "Geheimnis",
+    "seller": "Verkäufer",
+    "token": "Token",
+    "location": "Standort",
+    "avatar": "Bild",
+    "date": "Bestelldatum",
+    "status": "Status",
+    "status.all": "Alle",
+    "status.active": "Aktiv",
+    "status.inactive": "Inaktiv",
+    "manageStock": "Bestand verwalten",
+    "manageState": "Bestellstatus-Synchronisierung",
+    "nameRequired": "Bitte geben Sie den Kanalnamen ein",
+    "codeRequired": "Bitte geben Sie den Kanalcode ein",
+    "statusRequired": "Bitte wählen Sie den aktivierten Status",
+    "typeRequired": "Bitte Kanaltyp auswählen",
+    "urlRequired": "Bitte geben Sie die API-URL ein",
+    "keyRequired": "Bitte geben Sie den API-Schlüssel ein",
+    "secretRequired": "Bitte geben Sie den API-Geheimcode ein",
+    "tokenRequired": "Bitte geben Sie den API-Token ein",
+    "locationRequired": "Bitte geben Sie die Kanalstandort-ID ein",
+    "sellerRequired": "Bitte geben Sie die Channel Seller ID ein"
+  }
+}
