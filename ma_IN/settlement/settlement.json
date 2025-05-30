@@ -1,0 +1,12 @@
+{
+  "settlement": {
+    "id": "निवास आयडी",
+    "amountType": "रक्कम प्रकार",
+    "amountDescription": "रक्कम वर्णन",
+    "amount": "रक्कम",
+    "orderAmount": "आदेश रक्कम",
+    "expense": "खर्च",
+    "settlementAmount": "सेटलमेंट रक्कम",
+    "quantityPurchased": "खरेदी केलेली प्रमाण"
+  }
+}
