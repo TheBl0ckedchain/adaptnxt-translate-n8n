@@ -1,0 +1,12 @@
+{
+  "settlement": {
+    "id": "Abrechnungs-ID",
+    "amountType": "Betragsart",
+    "amountDescription": "Betragsbeschreibung",
+    "amount": "Betrag",
+    "orderAmount": "Bestellbetrag",
+    "expense": "Ausgaben",
+    "settlementAmount": "Vergleichsbetrag",
+    "quantityPurchased": "Menge gekauft"
+  }
+}
