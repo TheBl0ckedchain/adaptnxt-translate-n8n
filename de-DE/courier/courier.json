@@ -1,0 +1,18 @@
+{
+  "courier": {
+    "name": "Kuriername",
+    "pickupLocation": "Abholort",
+    "id": "Kurier Nein",
+    "code": "Code",
+    "avatar": "Bild",
+    "date": "Bestelldatum",
+    "status": "Status",
+    "status.all": "Alle",
+    "status.active": "Aktiv",
+    "status.inactive": "Inaktiv",
+    "nameRequired": "Bitte geben Sie den Namen des Kuriers ein",
+    "idRequired": "Bitte geben Sie die Kuriernummer ein",
+    "codeRequired": "Bitte geben Sie den Code ein",
+    "statusRequired": "Bitte wählen Sie den aktivierten Status aus"
+  }
+}
