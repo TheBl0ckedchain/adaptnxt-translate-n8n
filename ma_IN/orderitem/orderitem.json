@@ -1,0 +1,30 @@
+{
+  "orderitem": {
+    "name": "आयटम नाव",
+    "id": "आदेश क्रमांक",
+    "channel": "चॅनेल",
+    "courier": "शिपिंग सेवा",
+    "value": "आदेशाची किंमत",
+    "date": "ऑर्डर तारीख",
+    "sku": "स्कू",
+    "qty": "आयटम प्रमाण",
+    "returnqty": "वापसी प्रमाण",
+    "acceptqty": "स्वीकृती प्रमाण",
+    "rejectqty": "अस्वीकृती प्रमाण",
+    "price": "आयटमची किंमत",
+    "sub_total": "उप एकूण",
+    "total": "एकूण",
+    "addr": "पत्ता",
+    "zipcode": "पिनकोड",
+    "status": "स्थिति",
+    "status.all": "सर्व",
+    "status.pending": "लंबित",
+    "status.confirmed": "दर्जेदार",
+    "status.cancelled": "रद्द केलेले",
+    "status.shipped": "निघाले",
+    "nameRequired": "कृपया ऑर्डरआयटमचे नाव भरा",
+    "idRequired": "कृपया ऑर्डरआइटम क्रमांक प्रविष्ट करा",
+    "statusRequired": "कृपया सक्षम स्थिती निवडा",
+    "valueRequired": "कृपया एक मूल्य टाका"
+  }
+}
