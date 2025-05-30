@@ -1,0 +1,27 @@
+{
+  "dashboard": {
+    "overview.totalSales": "மொத்த விற்பனை",
+    "overview.visits": "சுற்றுகள்",
+    "overview.orders": "ஆணைகள்",
+    "overview.payments": "கட்டணம்",
+    "overview.sales": "விற்பனை",
+    "overview.operationalEffect": "செயல்பாட்டு விளைவுகள்",
+    "overview.wowChange": "வொவ் மாற்றம்",
+    "overview.weekly": "அவாரம்",
+    "overview.monthly": "மாதாந்திர",
+    "overview.dodChange": "DoD மாற்றம்",
+    "overview.dailySales": "தினசரி விற்பனை",
+    "overview.dailyOrders": "தினசரி ஆர்டர்",
+    "overview.visits.dailyVisits": "தினசரி பயணம்",
+    "overview.conversionRate": "மாற்றம் வீதம்",
+    "salePercent.proportionOfSales": "விற்பனை பங்காறு",
+    "salePercent.all": "அனைத்து",
+    "salePercent.online": "ஆன்லைன்",
+    "salePercent.offline": "ஆஃப்லைன்",
+    "salePercent.cod": "கோட்",
+    "timeline.traffic": "நெரிசல்",
+    "timeline.payments": "கட்டணங்கள்",
+    "timeline.orders": "ஆர்டர்கள்",
+    "timeline.sales": "விற்பனைகள்"
+  }
+}
