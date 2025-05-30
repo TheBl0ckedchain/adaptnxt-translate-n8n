@@ -1,0 +1,18 @@
+{
+  "courier": {
+    "name": "কুরিয়ার নাম",
+    "pickupLocation": "পিকআপ স্থান",
+    "id": "কুরিয়ার নম্বর",
+    "code": "কোড",
+    "avatar": "ছবি",
+    "date": "অর্ডার তারিখ",
+    "status": "অবস্থা",
+    "status.all": "সব",
+    "status.active": "সক্রিয়",
+    "status.inactive": "নিষ্ক্রিয়",
+    "nameRequired": "দয়া করে কুরিয়ারের নাম লিখুন",
+    "idRequired": "দয়া করে কুরিয়ার নম্বর প্রবেশ করুন",
+    "codeRequired": "দয়া করে কোড লিখুন",
+    "statusRequired": "দয়া করে সক্রিয় অবস্থা নির্বাচন করুন"
+  }
+}
