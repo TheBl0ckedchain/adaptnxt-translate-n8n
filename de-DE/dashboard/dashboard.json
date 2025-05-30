@@ -1,0 +1,27 @@
+{
+  "dashboard": {
+    "overview.totalSales": "Gesamtumsatz",
+    "overview.visits": "Besuche",
+    "overview.orders": "Bestellungen",
+    "overview.payments": "Zahlungen",
+    "overview.sales": "Vertrieb",
+    "overview.operationalEffect": "Betriebliche Wirkung",
+    "overview.wowChange": "WoW Änderung",
+    "overview.weekly": "Wöchentlich",
+    "overview.monthly": "Monatlich",
+    "overview.dodChange": "DoD Änderung",
+    "overview.dailySales": "Täglicher Verkauf",
+    "overview.dailyOrders": "Tägliche Bestellungen",
+    "overview.visits.dailyVisits": "Tägliche Besuche",
+    "overview.conversionRate": "Konversionsrate",
+    "salePercent.proportionOfSales": "Der Anteil der Verkäufe",
+    "salePercent.all": "Alle",
+    "salePercent.online": "Online",
+    "salePercent.offline": "Offline",
+    "salePercent.cod": "Cod",
+    "timeline.traffic": "Verkehr",
+    "timeline.payments": "Zahlungen",
+    "timeline.orders": "Bestellungen",
+    "timeline.sales": "Verkäufe"
+  }
+}
