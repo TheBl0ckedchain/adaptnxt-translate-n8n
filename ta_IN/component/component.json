@@ -1,0 +1,11 @@
+{
+  "component": {
+    "search.request": "கேள்வி",
+    "search.reset": "மறுதொடக்கம்",
+    "search.export": "ஏற்றுமதி",
+    "search.name": "பெயர்",
+    "search.sex": "செகம்",
+    "search.male": "ஆண்",
+    "search.female": "பெண்"
+  }
+}
