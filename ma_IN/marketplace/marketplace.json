@@ -1,0 +1,22 @@
+{
+  "marketplace": {
+    "name": "नाव",
+    "id": "नाही",
+    "code": "कोड",
+    "currency": "डीफॉल्ट चलन",
+    "currency.inr": "भारतीय रुपये",
+    "currency.usd": "अमेरिकी डॉलर",
+    "currency.ukp": "ब्रिटिश पौंड",
+    "currency.eur": "यूरो",
+    "avatar": "प्रतिमा",
+    "date": "आदेशाची तारीख",
+    "status": "स्थिती",
+    "status.all": "सर्व",
+    "status.active": "सक्रिय",
+    "status.inactive": "निष्क्रिय",
+    "nameRequired": "कृपया बाजाराचे नाव प्रविष्ट करा",
+    "idRequired": "कृपया मार्केटप्लेस नंबर प्रविष्ट करा",
+    "codeRequired": "कृपया कोड प्रविष्ट करा",
+    "statusRequired": "कृपया सक्षम स्थिती निवडा"
+  }
+}
