@@ -1,0 +1,28 @@
+{
+  "product": {
+    "title": "शिर्षक",
+    "currency": "चलन",
+    "avatar": "प्रतिमा",
+    "price": "किमत",
+    "id": "उत्पादन आयडी",
+    "sku": "उत्पादन SKU",
+    "hscode": "HSN कोड",
+    "code": "उत्पादन SKU",
+    "allocation": "% वाटप",
+    "qty": "साठवणीतील स्टॉक",
+    "leadtime": "शिप करण्याचा काळ",
+    "channel": "चॅनेल",
+    "status": "स्थिती",
+    "status.all": "सर्व",
+    "status.active": "सक्रिय",
+    "status.inactive": "निष्क्रिय",
+    "nameRequired": "कृपया उत्पादनाचे नाव टाका",
+    "idRequired": "कृपया उत्पादन क्रमांक प्रविष्ट करा",
+    "codeRequired": "कृपया उत्पादन कोड प्रविष्ट करा",
+    "allocationRequired": "कृपया % वाटप प्रविष्ट करा",
+    "statusRequired": "कृपया सक्षम स्थिती निवडा",
+    "valueRequired": "कृपया एक मूल्य प्रविष्ट करा",
+    "leadtimeRequired": "कृपया शिप करण्यासाठी लीड टाइम प्रविष्ट करा",
+    "qtyRequired": "कृपया हातातील स्टॉक प्रविष्ट करा"
+  }
+}
