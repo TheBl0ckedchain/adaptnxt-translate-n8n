@@ -1,6 +1,5 @@
-<img width="528" alt="image" src="https://github.com/user-attachments/assets/031ecdd9-1834-4e77-b026-d04e2e4cf5e5" /># adaptnxt-translate-n8n
-****Automated Language Pack Translation Workflow (n8n + Azure OpenAI)
-Overview****
+
+****Automated Language Pack Translation Workflow (n8n + Azure OpenAI) Overview****
 This project provides an automated workflow for translating JSON-based language packs from a GitHub repository into another language (e.g., Hindi) using n8n and Azure OpenAI.
 It is designed for developers and teams who need to localize software quickly, accurately, and at scale.
 **Features**
