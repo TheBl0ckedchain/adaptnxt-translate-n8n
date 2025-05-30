@@ -1,0 +1,14 @@
+{
+  "documentation": {
+    "introduction.title": "Einführung",
+    "introduction.description": "PointNXT ist eine unternehmensgerechte Vorlage für ein Hintergrundverwaltungssystem, basierend auf React und Ant Design. Verwenden Sie die neueste React Hooks API anstelle der traditionellen Klassen-API, Typescript wurde ebenfalls verwendet, um die Lesbarkeit und Wartbarkeit des Codes zu standardisieren, was die Entwicklungseffizienz verbessert. Verwenden Sie Redux als globale Zustandsverwaltungslibrary. Dieses Projekt ermöglicht es Ihnen, schnell eine neue Projektvorlage zu entwickeln und je nach Bedarf einige Teile des Codes zu entfernen. Wenn Sie keinen Bedarf haben, Vorlagen zu verwenden, wird dieses Projekt auch eine gute Ressource zum Lernen von React und Typescript sein. Darüber hinaus, wenn Sie denken, dass dieses Projekt eine Optimierung oder Modifizierung wert ist, können Sie gerne fragen, meine Kontaktdaten werden am Ende des Artikels angezeigt.",
+    "catalogue.title": "Katalog",
+    "catalogue.description": "Klicken Sie auf den Katalog, um schnell auf den angegebenen Inhalt zuzugreifen",
+    "catalogue.list.layout": "Layout",
+    "catalogue.list.routes": "Routen",
+    "catalogue.list.request": "HTTP-Anfrage",
+    "catalogue.list.theme": "Thema",
+    "catalogue.list.typescript": "Typisierung",
+    "catalogue.list.international": "International"
+  }
+}
