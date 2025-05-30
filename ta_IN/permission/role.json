@@ -1,0 +1,12 @@
+{
+  "permission": {
+    "role.name": "வகுப்பு பெயர்",
+    "role.code": "பங்கு குறியீடு",
+    "role.status": "நிலவியல்",
+    "role.status.all": "எல்லாம்",
+    "role.status.disabled": "முடக்கு",
+    "role.nameRequired": "உங்கள் கட்டுப்பாட்டினை உள்ளிடவும்",
+    "role.codeRequired": "தயவுசெய்து பங்கு குறியீட்டை உள்ளிடவும்",
+    "role.statusRequired": "பயனுள்ள நிலையை தேர்ந்தெடுக்கவும்"
+  }
+}
