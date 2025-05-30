@@ -1,0 +1,11 @@
+{
+  "component": {
+    "search.request": "درخواست",
+    "search.reset": "ری سیٹ",
+    "search.export": "برآمدات",
+    "search.name": "نام",
+    "search.sex": "جنسی",
+    "search.male": "مرد",
+    "search.female": "عورت"
+  }
+}
