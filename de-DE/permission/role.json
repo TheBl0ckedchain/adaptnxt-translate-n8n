@@ -1,0 +1,12 @@
+{
+  "permission": {
+    "role.name": "Rollenname",
+    "role.code": "Rollen-Code",
+    "role.status": "Status",
+    "role.status.all": "Alle",
+    "role.status.disabled": "Behindert",
+    "role.nameRequired": "Bitte geben Sie den Rollennamen ein",
+    "role.codeRequired": "Bitte geben Sie den Rollencode ein",
+    "role.statusRequired": "Bitte wählen Sie den aktivierten Status"
+  }
+}
