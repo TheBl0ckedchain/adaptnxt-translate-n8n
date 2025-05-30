@@ -1,0 +1,28 @@
+{
+  "product": {
+    "title": "শিরোনাম",
+    "currency": "মুদ্রা",
+    "avatar": "ছবি",
+    "price": "ราคา",
+    "id": "পণ্য আইডি",
+    "sku": "পণ্য SKU",
+    "hscode": "এইচএসএন কোড",
+    "code": "পণ্য SKU",
+    "allocation": "শতাংশ বরাদ্দ",
+    "qty": "মজুদে থাকা স্টক",
+    "leadtime": "শিপ করার আগে সময়",
+    "channel": "চ্যানেল",
+    "status": "স্থিতি",
+    "status.all": "সব",
+    "status.active": "সক্রিয়",
+    "status.inactive": "অকার্যকর",
+    "nameRequired": "দয়া করে পণ্যের নাম প্রবেশ করুন",
+    "idRequired": "দয়া করে পণ্য নম্বর টাইপ করুন",
+    "codeRequired": "দয়া করে পণ্য কোডটি প্রবেশ করুন",
+    "allocationRequired": "দয়া করে % বরাদ্দ ইনপুট করুন",
+    "statusRequired": "দয়া করে সক্ষম অবস্থা নির্বাচন করুন",
+    "valueRequired": "দয়া করে একটি মান প্রবেশ করান",
+    "leadtimeRequired": "দয়া করে শিপ করার জন্য লিড টাইম লিখুন",
+    "qtyRequired": "দয়া করে হাতে থাকা স্টক প্রবেশ করুন"
+  }
+}
