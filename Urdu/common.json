@@ -1,0 +1,19 @@
+{
+  "common": {
+    "okText": "ٹھیک ہے",
+    "closeText": "بند کریں",
+    "cancelText": "منسوخ کریں",
+    "loadingText": "لوڈ ہو رہا ہے",
+    "saveText": "محفوظ کریں",
+    "delText": "حذف کریں",
+    "resetText": "ری سیٹ",
+    "searchText": "تلاش",
+    "queryText": "تلاش",
+    "inputText": "براہ کرم داخل کریں",
+    "chooseText": "براہ کرم منتخب کریں",
+    "redo": "ریفریش",
+    "back": "پیچھے",
+    "light": "روشنی",
+    "dark": "سیاہ"
+  }
+}
