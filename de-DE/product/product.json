@@ -1,0 +1,28 @@
+{
+  "product": {
+    "title": "Titel",
+    "currency": "Währung",
+    "avatar": "Bild",
+    "price": "Preis",
+    "id": "Produkt-ID",
+    "sku": "Produkt SKU",
+    "hscode": "HSN-Code",
+    "code": "Produkt-SKU",
+    "allocation": "% Zuweisung",
+    "qty": "Lagerbestand",
+    "leadtime": "Lieferzeit bis zum Versand",
+    "channel": "Kanal",
+    "status": "Status",
+    "status.all": "Alle",
+    "status.active": "Aktiv",
+    "status.inactive": "Inaktiv",
+    "nameRequired": "Bitte geben Sie den Produktnamen ein",
+    "idRequired": "Bitte geben Sie die Produktnummer ein",
+    "codeRequired": "Bitte geben Sie den Produktcode ein",
+    "allocationRequired": "Bitte geben Sie die % Zuteilung ein",
+    "statusRequired": "Bitte wählen Sie den aktivierten Status",
+    "valueRequired": "Bitte geben Sie einen Wert ein",
+    "leadtimeRequired": "Bitte geben Sie die Vorlaufzeit für den Versand ein",
+    "qtyRequired": "Bitte geben Sie den Lagerbestand ein"
+  }
+}
