@@ -1,0 +1,698 @@
+{
+  "name": "adaptnxt-translate BEST",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1280,
+        155
+      ],
+      "id": "c081c692-036d-4d26-b25d-2b3da0a38649",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/TheBl0ckedchain/adaptnxt-translate-n8n/git/trees/main?recursive=1",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -840,
+        -195
+      ],
+      "id": "7e0f71db-62dc-4a41-812f-5bb04245882e",
+      "name": "HTTP Request",
+      "credentials": {
+        "githubApi": {
+          "id": "TN2k2w3ErxFNRHSD",
+          "name": "GitHub account"
+        }
+      },
+      "notes": "extract paths from GitHub repository "
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "value": "TheBl0ckedchain",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "adaptnxt-translate-n8n",
+          "mode": "list",
+          "cachedResultName": "adaptnxt-translate-n8n",
+          "cachedResultUrl": "https://github.com/TheBl0ckedchain/adaptnxt-translate-n8n"
+        },
+        "filePath": "={{ $json.path }}",
+        "asBinaryProperty": false,
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -180,
+        -295
+      ],
+      "id": "4e76dc70-8802-4ad1-aa5f-5022522d429b",
+      "name": "GitHub",
+      "webhookId": "22596571-f05d-4800-a5e4-a62fc272c4a2",
+      "credentials": {
+        "githubApi": {
+          "id": "TN2k2w3ErxFNRHSD",
+          "name": "GitHub account"
+        }
+      },
+      "notes": "returns all json files from repo"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const base64Content = $json.content;\nif (!base64Content) {\n  // Skip this item if content is missing\n  return null;\n}\n\nlet decoded;\ntry {\n  decoded = Buffer.from(base64Content, 'base64').toString('utf8');\n} catch (e) {\n  // Skip if decoding fails\n  return null;\n}\n\nlet jsonObj;\ntry {\n  jsonObj = JSON.parse(decoded);\n} catch (e) {\n  // Skip if JSON is invalid\n  return null;\n}\n\nreturn {\n  json: {\n    path: $json.path,\n    jsonObj\n  }\n};\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        40,
+        -295
+      ],
+      "id": "8c7be3b3-32f5-4872-b882-11731f5e0a62",
+      "name": "Binary decoding",
+      "notes": "converts binary encoded data to normal json English ready to translate\n"
+    },
+    {
+      "parameters": {
+        "jsCode": "function extractStrings(obj, prefix = []) {\n  let results = [];\n  for (const key in obj) {\n    if (typeof obj[key] === 'string') {\n      results.push({ keyPath: [...prefix, key], text: obj[key] });\n    } else if (typeof obj[key] === 'object' && obj[key] !== null) {\n      results = results.concat(extractStrings(obj[key], [...prefix, key]));\n    }\n  }\n  return results;\n}\n\nlet output = [];\nfor (const item of items) {\n  const strings = extractStrings(item.json.jsonObj);\n  for (const str of strings) {\n    output.push({\n      json: {\n        filePath: item.json.path,      // <--- preserve file path!\n        keyPath: str.keyPath,          // <--- preserve key path!\n        original: str.text             // <--- text to translate\n      }\n    });\n  }\n}\nreturn output;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        -295
+      ],
+      "id": "c78a4fca-d832-49c5-b10c-577945b58fe0",
+      "name": "string extraction"
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o-mini",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatAzureOpenAi",
+      "typeVersion": 1,
+      "position": [
+        660,
+        -160
+      ],
+      "id": "0ca1a8ae-e40e-4d14-8a1e-8a486b55db76",
+      "name": "Azure OpenAI Chat Model",
+      "credentials": {
+        "azureOpenAiApi": {
+          "id": "vepwksxhCFqes7qA",
+          "name": "Azure Open AI account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Translate the following text to \"{{ $json.targetLang }}\". Respond with only the translation—no explanation, no punctuation, no extra words, and no quotation marks. The translation will be used directly in a JSON language pack. If the input is a single word, respond with only the translated word. If the input is a sentence, respond with only the translated sentence.\n\nText: {{$json[\"original\"]}}\n",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        700,
+        -420
+      ],
+      "id": "1226ad3f-2ff1-40fb-aa0f-583571f1c685",
+      "name": "AI Agent",
+      "executeOnce": false,
+      "alwaysOutputData": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        1076,
+        -295
+      ],
+      "id": "93c96ec8-0b2e-450c-b70a-d5e2e3d1d997",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "TheBl0ckedchain",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "adaptnxt-translate-n8n",
+          "mode": "list",
+          "cachedResultName": "adaptnxt-translate-n8n",
+          "cachedResultUrl": "https://github.com/TheBl0ckedchain/adaptnxt-translate-n8n"
+        },
+        "filePath": "={{ $json.outputFolder }}/{{ $json.filePathStripped }}",
+        "fileContent": "={{$json.translatedContent}}",
+        "commitMessage": "="
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        1956,
+        -120
+      ],
+      "id": "4aa16b66-0718-4dcb-bdaf-5dbd282b9cb1",
+      "name": "GitHub1",
+      "webhookId": "566bad17-eb00-447d-84f9-3215872c34a9",
+      "credentials": {
+        "githubApi": {
+          "id": "TN2k2w3ErxFNRHSD",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "754eda5c-abb4-4966-ac60-08021a167578",
+              "name": "targetLang",
+              "value": "Tamil",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        480,
+        -420
+      ],
+      "id": "2e62dc3c-91e2-41a4-a2d0-06229ce46dc7",
+      "name": "set target language"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Group translations by filePath\nconst grouped = {};\n\nfor (const item of items) {\n  const filePath = item.json.filePath;\n  if (!grouped[filePath]) grouped[filePath] = [];\n  grouped[filePath].push({\n    keyPath: item.json.keyPath,\n    translated: item.json.output\n  });\n}\n\n// Helper to set a value in a nested object by key path\nfunction setDeep(obj, path, value) {\n  let current = obj;\n  for (let i = 0; i < path.length - 1; i++) {\n    if (!current[path[i]]) current[path[i]] = {};\n    current = current[path[i]];\n  }\n  current[path[path.length - 1]] = value;\n}\n\n// Rebuild JSON objects for each file\nconst output = [];\nfor (const filePath in grouped) {\n  let newObj = {};\n  for (const entry of grouped[filePath]) {\n    if (Array.isArray(entry.keyPath) && entry.keyPath.length > 0) {\n      setDeep(newObj, entry.keyPath, entry.translated);\n    }\n  }\n  output.push({\n    json: {\n      filePath,\n      translatedContent: JSON.stringify(newObj, null, 2) // pretty print\n    }\n  });\n}\nreturn output;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1296,
+        -295
+      ],
+      "id": "21b9fd2d-fce4-4760-87a0-a292a55a0150",
+      "name": "JSON maker"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f0f1a752-43c6-4281-b4a2-a3f2005a99e3",
+              "name": "sourceFolder",
+              "value": "en_US",
+              "type": "string"
+            },
+            {
+              "id": "be0f7302-ec7a-43d3-8e56-c2170bf42a71",
+              "name": "outputFolder",
+              "value": "ta_IN",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1060,
+        155
+      ],
+      "id": "95648845-bca0-4615-85c1-ef26090b794e",
+      "name": "set source folder"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "54bd06c1-fe7a-417a-b3c3-844d10a19602",
+              "leftValue": "={{ $json.action }}",
+              "rightValue": "translate",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -400,
+        -195
+      ],
+      "id": "b6bac277-a796-4fb4-ae25-279ca4572c86",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "jsCode": "const targetFolder = $('set source folder').first().json.sourceFolder;\nconst tree = items[0].json.tree;\n\nreturn tree\n  .filter(file =>\n    file.type === 'blob' &&\n    file.path.startsWith(targetFolder + '/')\n  )\n  .map(file => {\n    let action;\n    if (file.path.endsWith('.json') && file.size > 0) {\n      action = 'translate';\n    } else {\n      action = 'copy';\n    }\n    return {\n      json: {\n        path: file.path,\n        size: file.size,\n        action\n      }\n    };\n  });\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -620,
+        -195
+      ],
+      "id": "2a3329d3-c136-434d-8d79-3545fc5c6eba",
+      "name": "pathfinder and tag"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": {
+          "__rl": true,
+          "value": "TheBl0ckedchain",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "adaptnxt-translate-n8n",
+          "mode": "list",
+          "cachedResultName": "adaptnxt-translate-n8n",
+          "cachedResultUrl": "https://github.com/TheBl0ckedchain/adaptnxt-translate-n8n"
+        },
+        "filePath": "={{ $json.path }}",
+        "asBinaryProperty": false,
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -180,
+        5
+      ],
+      "id": "1e52e524-7f0c-467d-8e80-2a9990c6f792",
+      "name": "GitHub2",
+      "webhookId": "22596571-f05d-4800-a5e4-a62fc272c4a2",
+      "credentials": {
+        "githubApi": {
+          "id": "TN2k2w3ErxFNRHSD",
+          "name": "GitHub account"
+        }
+      },
+      "notes": "returns all json files from repo"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Remove the first folder from filePath\nconst originalPath = $json.filePath;\nconst newPath = originalPath.split('/').slice(1).join('/');\nreturn { ...$json, filePathStripped: newPath };\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1516,
+        -295
+      ],
+      "id": "a1009070-a515-486f-99db-93b805d5214e",
+      "name": "new path"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Remove the first folder from filePath\nconst originalPath = $json.path;\nconst newPath = originalPath.split('/').slice(1).join('/');\nreturn { ...$json, filePathStripped: newPath };\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        40,
+        5
+      ],
+      "id": "95f5c592-6d49-49ae-96ce-19e0fd3a6ac6",
+      "name": "newpath1"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "TheBl0ckedchain",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "adaptnxt-translate-n8n",
+          "mode": "list",
+          "cachedResultName": "adaptnxt-translate-n8n",
+          "cachedResultUrl": "https://github.com/TheBl0ckedchain/adaptnxt-translate-n8n"
+        },
+        "filePath": "={{ $json.outputFolder }}/{{ $json.filePathStripped }}",
+        "fileContent": "={{ $json.decodedContent }}",
+        "commitMessage": "="
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        778,
+        5
+      ],
+      "id": "bca45048-f397-4c60-9e64-3eefcbe4b891",
+      "name": "GitHub3",
+      "webhookId": "566bad17-eb00-447d-84f9-3215872c34a9",
+      "credentials": {
+        "githubApi": {
+          "id": "TN2k2w3ErxFNRHSD",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        260,
+        5
+      ],
+      "id": "d7ecdeb8-50b7-42d7-9955-843f8c2d3309",
+      "name": "Merge1"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        1736,
+        -120
+      ],
+      "id": "44acd9b9-86e8-41e7-9930-6c77fa02366f",
+      "name": "Merge2"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  let decodedContent = \"\";\n  try {\n    let content = item.json.content || \"\";\n    content = content.trim(); // Remove any whitespace/newlines\n    if (content) {\n      const buff = Buffer.from(content, 'base64');\n      decodedContent = buff.toString('utf-8');\n    }\n  } catch (e) {\n    // If decoding fails, decodedContent remains \"\"\n  }\n  return {\n    json: {\n      ...item.json,\n      decodedContent\n    }\n  };\n});\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        5
+      ],
+      "id": "aeffd2ec-d1ee-43cf-955a-2ea3d744db1f",
+      "name": "Code"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "set source folder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "pathfinder and tag",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub": {
+      "main": [
+        [
+          {
+            "node": "Binary decoding",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Binary decoding": {
+      "main": [
+        [
+          {
+            "node": "string extraction",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Azure OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "string extraction": {
+      "main": [
+        [
+          {
+            "node": "set target language",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "JSON maker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "set target language": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "JSON maker": {
+      "main": [
+        [
+          {
+            "node": "new path",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "set source folder": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 1
+          },
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "GitHub",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "GitHub2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "pathfinder and tag": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub2": {
+      "main": [
+        [
+          {
+            "node": "newpath1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "new path": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "newpath1": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub1": {
+      "main": [
+        []
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge2": {
+      "main": [
+        [
+          {
+            "node": "GitHub1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "GitHub3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "fee331c8-5034-4847-9a4f-a47c3ec8e43f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "b51083d1b35e68855ea4088159e8c7f29ea5193f4ec2db178ee7d0ea19524347"
+  },
+  "id": "AJdUuTel0BjSITO7",
+  "tags": []
+}
