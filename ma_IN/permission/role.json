@@ -1,0 +1,12 @@
+{
+  "permission": {
+    "role.name": "भूमिका नाव",
+    "role.code": "भूमिका कोड",
+    "role.status": "स्थिती",
+    "role.status.all": "सर्व",
+    "role.status.disabled": "अक्षम",
+    "role.nameRequired": "कृपया भूमिका नाव टाका",
+    "role.codeRequired": "कृपया भूमिका कोड प्रविष्ट करा",
+    "role.statusRequired": "कृपया सक्षम स्थिती निवडा"
+  }
+}
