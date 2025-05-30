@@ -1,0 +1,30 @@
+{
+  "orderitem": {
+    "name": "Artikelname",
+    "id": "Bestellnummer",
+    "channel": "Kanal",
+    "courier": "Versanddienst",
+    "value": "Bestellwert",
+    "date": "Bestelldatum",
+    "sku": "SKU",
+    "qty": "Artikel Menge",
+    "returnqty": "Retourmenge",
+    "acceptqty": "Menge akzeptieren",
+    "rejectqty": "Ablehnen Menge",
+    "price": "Artikelpreis",
+    "sub_total": "Zwischensumme",
+    "total": "Gesamt",
+    "addr": "Adresse",
+    "zipcode": "Postleitzahl",
+    "status": "Status",
+    "status.all": "Alle",
+    "status.pending": "Ausstehend",
+    "status.confirmed": "Bestätigt",
+    "status.cancelled": "Abgesagt",
+    "status.shipped": "Versendet",
+    "nameRequired": "Bitte geben Sie den Namen des Bestellartikels ein",
+    "idRequired": "Bitte geben Sie die Bestellartikelnummer ein",
+    "statusRequired": "Bitte wählen Sie den aktivierten Status",
+    "valueRequired": "Bitte einen Wert eingeben"
+  }
+}
