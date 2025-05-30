@@ -1,0 +1,11 @@
+{
+  "component": {
+    "search.request": "कायमचा",
+    "search.reset": "पुनर्स्थापित करा",
+    "search.export": "निर्यात",
+    "search.name": "नाव",
+    "search.sex": "seks",
+    "search.male": "पुरुष",
+    "search.female": "महिला"
+  }
+}
