@@ -1,0 +1,11 @@
+{
+  "component": {
+    "search.request": "Anfrage",
+    "search.reset": "Zurücksetzen",
+    "search.export": "Exportieren",
+    "search.name": "Name",
+    "search.sex": "Sex",
+    "search.male": "Männlich",
+    "search.female": "Weiblich"
+  }
+}
