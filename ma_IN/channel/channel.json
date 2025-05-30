@@ -1,0 +1,31 @@
+{
+  "channel": {
+    "name": "चॅनेलचे नाव",
+    "code": "चॅनल कोड",
+    "type": "चॅनल प्रकार",
+    "url": "यूआरएल",
+    "key": "की",
+    "secret": "गुप्त",
+    "seller": "विक्रेता",
+    "token": "टोकन",
+    "location": "स्थान",
+    "avatar": "छायाचित्र",
+    "date": "आदेशाची तारीख",
+    "status": "स्थिती",
+    "status.all": "सर्व",
+    "status.active": "सक्रिय",
+    "status.inactive": "निष्क्रिय",
+    "manageStock": "स्टॉक व्यवस्थापित करा",
+    "manageState": "आदेश स्थिती समन्वय",
+    "nameRequired": "कृपया चॅनेलचे नाव प्रविष्ट करा",
+    "codeRequired": "कृपया चॅनल कोड टाका",
+    "statusRequired": "कृपया सक्रिय स्थिती निवडा",
+    "typeRequired": "कृपया चॅनल प्रकार निवडा",
+    "urlRequired": "कृपया API URL टाका",
+    "keyRequired": "कृपया API की भरावी",
+    "secretRequired": "कृपया API गुप्तांक प्रविष्ट करा",
+    "tokenRequired": "कृपया API टोकन प्रविष्ट करा",
+    "locationRequired": "कृपया चॅनल स्थान आयडी प्रविष्ट करा",
+    "sellerRequired": "कृपया चॅनेल सेलर आयडी भरा"
+  }
+}
