@@ -1,0 +1,8 @@
+{
+  "tagsView": {
+    "operation.closeCurrent": "বর্তমান বন্ধ করুন",
+    "operation.closeOther": "অন্য বন্ধ করুন",
+    "operation.closeAll": "সব বন্ধ কর",
+    "operation.dashboard": "ড্যাশবোর্ড"
+  }
+}
