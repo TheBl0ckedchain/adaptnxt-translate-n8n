@@ -1,0 +1,12 @@
+{
+  "settlement": {
+    "id": "இணைப்பு அடையாளம்",
+    "amountType": "உருமாற்ற எல்லை",
+    "amountDescription": "அளவு விளக்கம்",
+    "amount": "விலயம்",
+    "orderAmount": "முதல் தொகை",
+    "expense": "செலவுகள்",
+    "settlementAmount": "வாழ்க்கை தொகை",
+    "quantityPurchased": "கொள்வனவு செய்யப்பட்ட அளவு"
+  }
+}
