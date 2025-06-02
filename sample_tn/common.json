@@ -1,0 +1,19 @@
+{
+  "common": {
+    "okText": "சரி",
+    "closeText": "மூடு",
+    "cancelText": "ரத்து",
+    "loadingText": "சம்பவம்...",
+    "saveText": "சேர்",
+    "delText": "அழிக்கவும்",
+    "resetText": "மறுசீரமைக்கவும்",
+    "searchText": "தேடு",
+    "queryText": "தேடு",
+    "inputText": "கூட்டு பின்னேற்பு",
+    "chooseText": "தயவுசெய்து தேர்ந்துங்கள்",
+    "redo": "புதுப்பிப்பு",
+    "back": "பின்புறம்",
+    "light": "ஒளி",
+    "dark": "இந்திரம்"
+  }
+}
