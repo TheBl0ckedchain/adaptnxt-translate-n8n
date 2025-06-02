@@ -1,0 +1,20 @@
+{
+  "common": {
+    "okText": "ठीक है",
+    "closeText": "बंद करें",
+    "cancelText": "रद्द करें",
+    "loadingText": "लोड हो रहा है...",
+    "saveText": "सहेजें",
+    "delText": "हटाएँ",
+    "resetText": "रीसेट करें",
+    "searchText": "खोजें",
+    "queryText": "खोजें",
+    "inputText": "कृपया दर्ज करें",
+    "chooseText": "कृपया चुनें",
+    "redo": "ताज़ा करें",
+    "back": "वापस",
+    "light": "रोशनी",
+    "dark": "अंधेरा",
+    "test": "परीक्षण"
+  }
+}
