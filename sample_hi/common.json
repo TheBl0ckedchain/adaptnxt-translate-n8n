@@ -5,16 +5,16 @@
     "cancelText": "रद्द करें",
     "loadingText": "लोड हो रहा है...",
     "saveText": "सहेजें",
-    "delText": "हटाएँ",
+    "delText": "हटाएं",
     "resetText": "रीसेट करें",
     "searchText": "खोजें",
     "queryText": "खोजें",
     "inputText": "कृपया दर्ज करें",
     "chooseText": "कृपया चुनें",
-    "redo": "ताज़ा करें",
+    "redo": "पुनः लोड करें",
     "back": "वापस",
-    "light": "रोशनी",
-    "dark": "अंधेरा",
+    "light": "हल्का",
+    "dark": "गहरा",
     "test": "परीक्षण"
   }
 }
