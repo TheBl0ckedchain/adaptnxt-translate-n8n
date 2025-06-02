@@ -1,20 +1,24 @@
 {
-  "common": {
-    "okText": "ठीक है",
-    "closeText": "बंद करें",
-    "cancelText": "रद्द करें",
-    "loadingText": "लोड हो रहा है",
-    "saveText": "सहेजें",
-    "delText": "हटाएँ",
-    "resetText": "रीसेट",
-    "searchText": "खोज",
-    "queryText": "खोजें",
-    "inputText": "कृपया प्रवेश करें",
-    "chooseText": "कृपया चुनें",
-    "redo": "रीफ्रेश",
-    "back": "पीछे",
-    "light": "रोशनी",
-    "dark": "अंधेरा",
-    "test": "परीक्षा"
-  }
+	"common": {
+		"okText": "OK",
+		"closeText": "Close",
+		"cancelText": "Cancel",
+		"loadingText": "Loading...",
+		"saveText": "Save",
+		"delText": "Delete",
+		"resetText": "Reset",
+		"searchText": "Search",
+		"queryText": "Search",
+
+		"inputText": "Please enter",
+		"chooseText": "Please choose",
+
+		"redo": "Refresh",
+		"back": "Back",
+
+		"light": "Light",
+		"dark": "Dark",
+
+		"test" : "test"
+	}
 }
