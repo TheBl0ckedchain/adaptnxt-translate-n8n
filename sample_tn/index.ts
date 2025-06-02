@@ -1,32 +1,47 @@
-aW1wb3J0IGNoYW5uZWwgZnJvbSAiLi9jaGFubmVsL2NoYW5uZWwuanNvbiI7
-DQppbXBvcnQgY29tbW9uIGZyb20gIi4vY29tbW9uLmpzb24iOw0KaW1wb3J0
-IGNvbXBvbmVudCBmcm9tICIuL2NvbXBvbmVudC9jb21wb25lbnQuanNvbiI7
-DQppbXBvcnQgY291cmllciBmcm9tICIuL2NvdXJpZXIvY291cmllci5qc29u
-IjsNCmltcG9ydCBkYXNoYm9hcmQgZnJvbSAiLi9kYXNoYm9hcmQvZGFzaGJv
-YXJkLmpzb24iOw0KaW1wb3J0IGRvY3VtZW50YXRpb24gZnJvbSAiLi9kb2N1
-bWVudGF0aW9uL2RvY3VtZW50YXRpb24uanNvbiI7DQppbXBvcnQgZ2xvYmFs
-IGZyb20gIi4vZ2xvYmFsL2dsb2JhbC5qc29uIjsNCmltcG9ydCBndWlkZSBm
-cm9tICIuL2d1aWRlL2d1aWRlLmpzb24iOw0KaW1wb3J0IGxpc3RpbmcgZnJv
-bSAiLi9saXN0aW5nL2xpc3RpbmcuanNvbiI7DQppbXBvcnQgbWFya2V0cGxh
-Y2UgZnJvbSAiLi9tYXJrZXRwbGFjZS9tYXJrZXRwbGFjZS5qc29uIjsNCmlt
-cG9ydCBvcmRlciBmcm9tICIuL29yZGVyL29yZGVyLmpzb24iOw0KaW1wb3J0
-IG9yZGVyaXRlbSBmcm9tICIuL29yZGVyaXRlbS9vcmRlcml0ZW0uanNvbiI7
-DQppbXBvcnQgcGVybWlzc2lvblJvbGUgZnJvbSAiLi9wZXJtaXNzaW9uL3Jv
-bGUuanNvbiI7DQppbXBvcnQgcHJvZHVjdCBmcm9tICIuL3Byb2R1Y3QvcHJv
-ZHVjdC5qc29uIjsNCmltcG9ydCBzZXR0aW5ncyBmcm9tICIuL3NldHRpbmdz
-L3NldHRpbmdzLmpzb24iOw0KaW1wb3J0IHNldHRsZW1lbnQgZnJvbSAiLi9z
-ZXR0bGVtZW50L3NldHRsZW1lbnQuanNvbiI7DQppbXBvcnQgc2V0dXAgZnJv
-bSAiLi9zZXR1cC9zZXR1cC5qc29uIjsNCmltcG9ydCBzaGlwbWVudCBmcm9t
-ICIuL3NoaXBtZW50L3NoaXBtZW50Lmpzb24iOw0KaW1wb3J0IHN5cyBmcm9t
-ICIuL3N5cy5qc29uIjsNCmltcG9ydCBhdmF0b3JEcm9wTWVudSBmcm9tICIu
-L3VzZXIvYXZhdG9yRHJvcE1lbnUuanNvbiI7DQppbXBvcnQgdGFnc1ZpZXdE
-cm9wTWVudSBmcm9tICIuL3VzZXIvdGFnc1ZpZXdEcm9wTWVudS5qc29uIjsN
-CmltcG9ydCB0aXRsZSBmcm9tICIuL3VzZXIvdGl0bGUuanNvbiI7DQoNCmV4
-cG9ydCBkZWZhdWx0IHsNCgkuLi5jb21tb24sDQoJLi4uc3lzLA0KCS4uLmds
-b2JhbCwNCgkuLi5zZXR0aW5ncywNCgkuLi5hdmF0b3JEcm9wTWVudSwNCgku
-Li50YWdzVmlld0Ryb3BNZW51LA0KCS4uLnRpdGxlLA0KCS4uLnBlcm1pc3Np
-b25Sb2xlLA0KCS4uLmRhc2hib2FyZCwNCgkuLi5ndWlkZSwNCgkuLi5kb2N1
-bWVudGF0aW9uLA0KCS4uLm9yZGVyLA0KCS4uLm9yZGVyaXRlbSwNCgkuLi5j
-b3VyaWVyLA0KCS4uLmNoYW5uZWwsDQoJLi4ubGlzdGluZywNCgkuLi5wcm9k
-dWN0LA0KCS4uLnNoaXBtZW50LA0KCS4uLnNldHVwLA0KCS4uLm1hcmtldHBs
-YWNlLA0KCS4uLmNvbXBvbmVudCwNCgkuLi5zZXR0bGVtZW50LA0KfTsNCg==
+import channel from "./channel/channel.json";
+import common from "./common.json";
+import component from "./component/component.json";
+import courier from "./courier/courier.json";
+import dashboard from "./dashboard/dashboard.json";
+import documentation from "./documentation/documentation.json";
+import global from "./global/global.json";
+import guide from "./guide/guide.json";
+import listing from "./listing/listing.json";
+import marketplace from "./marketplace/marketplace.json";
+import order from "./order/order.json";
+import orderitem from "./orderitem/orderitem.json";
+import permissionRole from "./permission/role.json";
+import product from "./product/product.json";
+import settings from "./settings/settings.json";
+import settlement from "./settlement/settlement.json";
+import setup from "./setup/setup.json";
+import shipment from "./shipment/shipment.json";
+import sys from "./sys.json";
+import avatorDropMenu from "./user/avatorDropMenu.json";
+import tagsViewDropMenu from "./user/tagsViewDropMenu.json";
+import title from "./user/title.json";
+
+export default {
+	...common,
+	...sys,
+	...global,
+	...settings,
+	...avatorDropMenu,
+	...tagsViewDropMenu,
+	...title,
+	...permissionRole,
+	...dashboard,
+	...guide,
+	...documentation,
+	...order,
+	...orderitem,
+	...courier,
+	...channel,
+	...listing,
+	...product,
+	...shipment,
+	...setup,
+	...marketplace,
+	...component,
+	...settlement,
+};
