@@ -1,0 +1,11 @@
+{
+  "component": {
+    "search.request": "கோரிக்கை",
+    "search.reset": "மறுதலில் அமைக்கவும்",
+    "search.export": "எக்குபம்",
+    "search.name": "பெயர்",
+    "search.sex": "இடம்",
+    "search.male": "ஆண்",
+    "search.female": "பெண்"
+  }
+}
