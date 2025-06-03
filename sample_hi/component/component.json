@@ -1,11 +1,20 @@
 {
-  "component": {
-    "search.request": "अनुरोध",
-    "search.reset": "पुनर्प्रारंभ",
-    "search.export": "निर्यात",
-    "search.name": "नाम",
-    "search.sex": "लिंग",
-    "search.male": "पुरुष",
-    "search.female": "महिला"
+  "common": {
+    "okText": "ठीक है",
+    "closeText": "बंद करें",
+    "cancelText": "रद्द करें",
+    "loadingText": "लोड हो रहा है...",
+    "saveText": "सहेजें",
+    "delText": "हटाएं",
+    "resetText": "रीसेट करें",
+    "searchText": "खोजें",
+    "queryText": "खोजें",
+    "inputText": "कृपया दर्ज करें",
+    "chooseText": "कृपया चुनें",
+    "redo": "फिर से करें",
+    "back": "वापस",
+    "light": "हल्का",
+    "dark": "अंधेरा",
+    "test1": "गाय"
   }
 }
