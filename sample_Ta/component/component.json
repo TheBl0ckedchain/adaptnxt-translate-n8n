@@ -1,0 +1,11 @@
+{
+  "component": {
+    "search.request": "கோரிக்கை",
+    "search.reset": "முழுமையாக புதுப்பி",
+    "search.export": "ஓடுகள்",
+    "search.name": "பெயர்",
+    "search.sex": "பால்",
+    "search.male": "ஆண்",
+    "search.female": "பெண்"
+  }
+}
