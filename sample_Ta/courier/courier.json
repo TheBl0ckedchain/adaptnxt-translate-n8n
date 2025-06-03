@@ -1,18 +1,13 @@
 {
-  "courier": {
-    "name": "குரியர் பெயர்",
-    "pickupLocation": "எடுப்பிடம்",
-    "id": "குரியர் எண்",
-    "code": "குறி",
-    "avatar": "படம்",
-    "date": "அர்டர் தேதி",
-    "status": "நிலை",
-    "status.all": "அனைத்து",
-    "status.active": "செயலில் உள்ள",
-    "status.inactive": "செயல்பாடு இல்லாத",
-    "nameRequired": "குரியர் பெயரை புகுத்தவும்",
-    "idRequired": "குரியர் எண்ணை புகுத்தவும்",
-    "codeRequired": "குறியை புகுத்தவும்",
-    "statusRequired": "செயல்பாட்டில் உள்ள நிலையில் தேர்வு செய்யவும்"
+  "component": {
+    "search.request": "अनुरोध",
+    "search.reset": "रीसेट",
+    "search.export": "निर्यात",
+    "search.name": "नाम",
+    "search.sex": "लिंग",
+    "search.male": "पुरुष",
+    "search.female": "महिला",
+    "search.test": "छोटी परीक्षा",
+    "search.test2": "test2"
   }
 }
