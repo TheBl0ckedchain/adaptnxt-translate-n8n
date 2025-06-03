@@ -1,12 +1,13 @@
 {
   "component": {
-    "search.request": "கோரிக்கை",
-    "search.reset": "மீட்டமை",
-    "search.export": "எடுத்துச்செல்வது",
-    "search.name": "பெயர்",
-    "search.sex": "பாலினம்",
-    "search.male": "ஆண்",
-    "search.female": "பெண்",
-    "search.test": "சிறு சோதனை"
+    "search.request": "अनुरोध",
+    "search.reset": "रीसेट",
+    "search.export": "निर्यात",
+    "search.name": "नाम",
+    "search.sex": "लिंग",
+    "search.male": "पुरुष",
+    "search.female": "महिला",
+    "search.test": "छोटी परीक्षा",
+    "search.test2": "test2"
   }
 }
