@@ -26,7 +26,6 @@
     "secretRequired": "कृपया API गोपनीयता दर्ज करें",
     "tokenRequired": "कृपया API टोकन दर्ज करें",
     "locationRequired": "कृपया चैनल स्थान आईडी दर्ज करें",
-    "sellerRequired": "कृपया चैनल विक्रेता आईडी दर्ज करें",
-    "test": "कुत्ता"
+    "sellerRequired": "कृपया चैनल विक्रेता आईडी दर्ज करें"
   }
 }
