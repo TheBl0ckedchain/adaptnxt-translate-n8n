@@ -1,0 +1,13 @@
+{
+  "component": {
+    "search.request": "अनुरोध",
+    "search.reset": "रीसेट",
+    "search.export": "निर्यात",
+    "search.name": "नाम",
+    "search.sex": "लिंग",
+    "search.male": "पुरुष",
+    "search.female": "महिला",
+    "search.test": "परीक्षा",
+    "search.test2": "परीक्षा2"
+  }
+}
