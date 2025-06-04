@@ -1,0 +1,30 @@
+{
+  "orderitem": {
+    "name": "आइटम का नाम",
+    "id": "ऑर्डर नंबर",
+    "channel": "चैनल",
+    "courier": "शिपिंग सेवा",
+    "value": "ऑर्डर मूल्य",
+    "date": "ऑर्डर तिथि",
+    "sku": "SKU",
+    "qty": "आइटम की मात्रा",
+    "returnqty": "वापसी मात्रा",
+    "acceptqty": "स्वीकृत मात्रा",
+    "rejectqty": "अस्वीकृत मात्रा",
+    "price": "आइटम मूल्य",
+    "sub_total": "उप-टोटल",
+    "total": "कुल",
+    "addr": "पता",
+    "zipcode": "ज़िप कोड",
+    "status": "स्थिती",
+    "status.all": "सभी",
+    "status.pending": "लंबित",
+    "status.confirmed": "पुष्ट",
+    "status.cancelled": "रद्द",
+    "status.shipped": "भेजा गया",
+    "nameRequired": "कृपया ऑर्डर आइटम का नाम दर्ज करें",
+    "idRequired": "कृपया ऑर्डर आइटम नंबर दर्ज करें",
+    "statusRequired": "कृपया सक्रिय स्थिति चुनें",
+    "valueRequired": "कृपया एक मूल्य दर्ज करें"
+  }
+}
