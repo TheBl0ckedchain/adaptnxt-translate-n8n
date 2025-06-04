@@ -1,0 +1,13 @@
+{
+  "component": {
+    "search.request": "అనుమతి",
+    "search.reset": "పునఃస్ధాపించు",
+    "search.export": "ఎక్స్‌పోర్ట్",
+    "search.name": "పేరు",
+    "search.sex": "లింగం",
+    "search.male": "పురుషుల",
+    "search.female": "మహిళ",
+    "search.test": "సర examination",
+    "search.test2": "సర examination2"
+  }
+}
