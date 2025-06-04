@@ -1,0 +1,12 @@
+{
+  "settlement": {
+    "id": "स्थानीय पहचान",
+    "amountType": "राशि का प्रकार",
+    "amountDescription": "राशि का विवरण",
+    "amount": "राशि",
+    "orderAmount": "आर्डर राशि",
+    "expense": "खर्च",
+    "settlementAmount": "स्थानीय राशि",
+    "quantityPurchased": "खरीदी गई मात्रा"
+  }
+}
