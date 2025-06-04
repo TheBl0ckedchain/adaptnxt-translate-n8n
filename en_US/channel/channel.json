@@ -27,5 +27,6 @@
 		"tokenRequired": "Please input the API Token",
 		"locationRequired": "Please input the Channel Location Id",
 		"sellerRequired": "Please input the Channel Seller Id"
+		"test":"dog"
 	}
 }
