@@ -1,12 +1,32 @@
 {
-  "settlement": {
-    "id": "स्थानीय पहचान",
-    "amountType": "राशि का प्रकार",
-    "amountDescription": "राशि का विवरण",
-    "amount": "राशि",
-    "orderAmount": "आर्डर राशि",
-    "expense": "खर्च",
-    "settlementAmount": "स्थानीय राशि",
-    "quantityPurchased": "खरीदी गई मात्रा"
+  "channel": {
+    "name": "चैनल का नाम",
+    "code": "चैनल कोड",
+    "type": "चैनल प्रकार",
+    "url": "यूआरएल",
+    "key": "चाबी",
+    "secret": "गोपनीयता",
+    "seller": "विक्रेता",
+    "token": "टोकन",
+    "location": "स्थान",
+    "avatar": "चित्र",
+    "date": "आदेश की तारीख",
+    "status": "स्थिति",
+    "status.all": "सभी",
+    "status.active": "सक्रिय",
+    "status.inactive": "निष्क्रिय",
+    "manageStock": "स्टॉक प्रबंधित करें",
+    "manageState": "आदेश की स्थिति समन्वय",
+    "nameRequired": "कृपया चैनल का नाम दर्ज करें",
+    "codeRequired": "कृपया चैनल कोड दर्ज करें",
+    "statusRequired": "कृपया सक्षम स्थिति चुनें",
+    "typeRequired": "कृपया चैनल प्रकार चुनें",
+    "urlRequired": "कृपया API यूआरएल दर्ज करें",
+    "keyRequired": "कृपया API चाबी दर्ज करें",
+    "secretRequired": "कृपया API गोपनीयता दर्ज करें",
+    "tokenRequired": "कृपया API टोकन दर्ज करें",
+    "locationRequired": "कृपया चैनल स्थान आईडी दर्ज करें",
+    "sellerRequired": "कृपया चैनल विक्रेता आईडी दर्ज करें",
+    "test": "dog"
   }
 }
