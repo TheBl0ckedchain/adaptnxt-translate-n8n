@@ -1,0 +1,18 @@
+{
+  "courier": {
+    "name": "कूरियर का नाम",
+    "pickupLocation": "पिकअप स्थान",
+    "id": "कूरियर संख्या",
+    "code": "कोड",
+    "avatar": "छवि",
+    "date": "आर्डर तिथि",
+    "status": "स्थिति",
+    "status.all": "सभी",
+    "status.active": "सक्रिय",
+    "status.inactive": "निष्क्रिय",
+    "nameRequired": "कूरियर का नाम दर्ज करें",
+    "idRequired": "कूरियर संख्या दर्ज करें",
+    "codeRequired": "कोड दर्ज करें",
+    "statusRequired": "कृपया सक्षम स्थिति चुनें"
+  }
+}
